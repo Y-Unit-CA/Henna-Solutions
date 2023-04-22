@@ -1,2 +1,2 @@
-# MyWebApp
-This is my web app with HTML and CSS tutorials.
+# Henna Solutions Project
+Project for Coding Bootcamp
