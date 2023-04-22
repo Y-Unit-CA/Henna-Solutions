@@ -1,2 +1,2 @@
 # Henna Solutions Project
-Project for Coding Bootcamp
+To Create and Sync the Project on Github.
