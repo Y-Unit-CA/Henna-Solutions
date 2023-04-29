@@ -1,11 +1,11 @@
 //--- Databases ---//
-Anna_Archiecture_Inc
+Anna_Architecture_Inc
 
 //--- Relationships ---//
 Client HAS-MANY Meetings    // 1 to many
 
 //--- Tables ---//
-create table Client(
+CREATE TABLE Client(
     CID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(256),
     Voice VARCHAR(256),
@@ -13,12 +13,12 @@ create table Client(
     Email_1 VARCHAR(256),
     AdrLine_1 VARCHAR(256),
     City VARCHAR(256),
-    Zipcode CHAR(5),
     State CHAR(2),
+    Zipcode CHAR(5),
     Country VARCHAR(256)
 );
 
-create table Meetings(
+CREATE TABLE Meetings(
     MID INT PRIMARY KEY AUTO_INCREMENT,
     MeetingNamez VARCHAR(256),
     MeetingType VARCHAR(256),
@@ -26,14 +26,15 @@ create table Meetings(
     MeetingTime DATETIME,
     MeetingAdrLine_1 VARCHAR(256),
     MeetingCity VARCHAR(256),
-    MeetingZipcode CHAR(5),
     MeetingState CHAR(2),
+    MeetingZipcode CHAR(5),
     MeetingCountry VARCHAR(256),
     CID INT,
     CONSTRAINT fk_client_meetings FOREIGN KEY(CID)
     REFERENCES Client(CID)
 );
     
-
+//--- Data ---//    
+INSERT INTO Client(NULL, 'Helen Tan', '+1 323 678 9033', '+1 323 678 9033', 'helentan@gmail.com', '23 Thomason Street', 'Los Angeles', )
 
 
