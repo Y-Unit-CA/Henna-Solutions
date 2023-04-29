@@ -58,3 +58,13 @@ INSERT INTO Meetings VALUES(NULL, 'Board Meeting', 'Internal', 'To discuss compa
 INSERT INTO Meetings VALUES(NULL, 'Employee Review', 'Internal', 'To provide performance feedback and set goals', '2023-05-16 11:00:00', '9876 Oak Lane', 'Los Angeles', 'CA', '90077', 'United States', 1);
 INSERT INTO Meetings VALUES(NULL, 'Product Demo', 'External', 'To showcase new features and capabilities', '2023-05-23 15:30:00', '6320 Wilshire Boulevard', 'Los Angeles', 'CA', '90048', 'United States', 8);
 INSERT INTO Meetings VALUES(NULL, 'Team Building', 'Internal', 'To strengthen team bonds and promote collaboration', '2023-05-30 14:00:00', '7895 Addison Drive', 'Chicago', 'IL', '60618', 'United States', 5);
+
+
+//--- Commands ---//
+ALTER TABLE Meetings CHANGE COLUMN MeetingNamez MeetingName VARCHAR(256);
+
+SELECT Client.Name, Client.SMS, Meetings.MeetingName, Meetings.MeetingType, Meetings.MeetingTime, Meetings.MeetingCity FROM Client INNER JOIN Meetings on Client.cid = Meetings.cid;
+
+SELECT Client.Name, Client.SMS, Meetings.MeetingName, Meetings.MeetingType, Meetings.MeetingTime, Meetings.MeetingCity FROM Client RIGHT JOIN Meetings on Client.cid = Meetings.cid; 
+
+ORDER BY Client.Name;
