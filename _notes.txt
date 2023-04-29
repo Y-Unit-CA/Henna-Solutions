@@ -38,7 +38,7 @@ CREATE TABLE Meetings(
 INSERT INTO Client VALUES(NULL, 'Helen Tan', '+1 323 678 9033', '+1 323 678 9033', 'helentan@gmail.com', '23 Thomason Street', 'Los Angeles', 'CA', '90003', 'United States');
 INSERT INTO Client VALUES(NULL, 'Tomas Gabriel', '+1 323 384 3759', '+1 323 384 3759', 'tomasgab24@gmail.com', '23 Thomason Street', 'Los Angeles', 'CA', '90003', 'United States');
 INSERT INTO Client VALUES(NULL, 'Ashley Duncan', '+1 212 347 3957', '+1 917 465 3845', 'Ashdun@gmail.com', '1022 Greene Street', 'New York', 'NY', '10003', 'United States');
-INSERT INTO Client VALUES(NULL, 'Tom Cheng, '+1 212 734 7282', '1 917 555 3746', 'tomcheng@gmail.com', '1022 Greene Street', 'New York', 'NY', '10003', 'United States');
+INSERT INTO Client VALUES(NULL, 'Tom Cheng', '+1 212 734 7282', '1 917 555 3746', 'tomcheng@gmail.com', '1022 Greene Street', 'New York', 'NY', '10003', 'United States');
 INSERT INTO Client VALUES(NULL, 'John Smith', '+1 555 123 4567', '+1 555 123 4567', 'johnsmith@example.com', '123 Main St.', 'Anytown', 'CA', '12345', 'United States');
 INSERT INTO Client VALUES(NULL, 'Jane Doe', '+1 555 789 0123', '+1 555 789 0123', 'janedoe@example.com', '456 Elm St.', 'Othertown', 'CA', '67890', 'United States');
 INSERT INTO Client VALUES(NULL, 'William Johnson', '+1 555 246 8101', '+1 555 246 8101', 'williamjohnson@example.com', '789 Maple St.', 'Somewhereville', 'NY', '23456', 'United States');
