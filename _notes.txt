@@ -67,4 +67,4 @@ SELECT Client.Name, Client.SMS, Meetings.MeetingName, Meetings.MeetingType, Meet
 
 SELECT Client.Name, Client.SMS, Meetings.MeetingName, Meetings.MeetingType, Meetings.MeetingTime, Meetings.MeetingCity FROM Client RIGHT JOIN Meetings on Client.cid = Meetings.cid; 
 
-ORDER BY Client.Name;
+ORDER BY Client.Name; 
